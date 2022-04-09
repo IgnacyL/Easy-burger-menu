@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  position: relative;
+}
+.burger {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: -300px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 300px;
+  list-style-type: none;
+  font-size: 40px;
+  transition: 0.4s;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  left: 0;
+}
+.hide {
+  display: none;
+}
